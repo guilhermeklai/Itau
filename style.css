@@ -4,28 +4,37 @@ body{
 }
 
 .grid{
-    grid-auto-rows: 600px 10px;
+    grid-auto-rows: 1px 600px 1px;
     grid-template-areas:
     "header"
+    "main"
     "footer";
 }
 
 header{
     grid-area: header;
+    height: 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    grid-area: main;
     background-color: white;
     height: 600px;
+    margin-bottom: 50px;
 }
 
 
 
-header div{
-    margin: 50px 50px 0px 50px;
+main div{
+    margin: 0px 50px 0px 50px;
     display: block;
     align-items: center;
     justify-content: center;
 }
 
-header div div{
+main div div{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -102,7 +111,7 @@ header div div{
 footer{
     grid: footer;
     background-color: rgb(5, 75, 5);
-    height: 20px;
+    height: 1px;
 }
 
 footer div{
@@ -118,3 +127,4 @@ footer div a{
     margin-left: 10px;
     margin-right: 10px;
 }
+
