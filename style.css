@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    background-color: rgb(5, 75, 5);
+}
+
+.grid{
+    grid-auto-rows: 600px 10px;
+    grid-template-areas:
+    "header"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: white;
+    height: 600px;
+}
+
+
+
+header div{
+    margin: 50px 50px 0px 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+header div div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.operation{
+    color: rgb(5, 75, 5);
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+.operation p{
+    border-bottom: 2px rgb(5, 75, 5) solid;
+}
+
+.operation input{
+    margin-left: 10px;
+    border: 2px rgb(5, 75, 5) solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.operation .cpf{
+    margin-left: 107px;
+}
+
+.operation .valor{
+    margin-left: 35px;
+}
+
+.box .operation-1{
+    color: rgb(5, 75, 5);
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 2px rgb(5, 75, 5) solid;
+    margin-right: 700px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.operation-1 select{
+    margin-left: 10px;
+    border: 2px rgb(5, 75, 5) solid;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.operation-1 select:hover{
+    cursor: pointer;
+}
+
+.operation button{
+    background-color:  rgb(5, 75, 5);
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 2px  rgb(5, 75, 5) solid;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.operation button:hover{
+    cursor: pointer;
+    background-color: rgba(8, 112, 8, 0.781);
+}
+
+
+footer{
+    grid: footer;
+    background-color: rgb(5, 75, 5);
+    height: 20px;
+}
+
+footer div{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer div a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
