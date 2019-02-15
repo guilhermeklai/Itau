@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8080';
+const apiUrl = 'http://134.209.3.120:8080';
 
 const enviar = function(){
     let valor = document.querySelector("#operacao").value;
@@ -68,7 +68,8 @@ const enviarDesbloqueio = function(){
             'Content-type': 'application/json'
         },
         body: buscarDados()
-    }).then(tratarDados).then(exibirMensagemDesbloqueio);
+
+    }).then(JSON.parse(tratarDados)).then(exibirMensagemDesbloqueio(tratarDados));
 }
 
 const exibirMensagemDesbloqueio = function(dados){
@@ -88,6 +89,9 @@ const enviarTransferencia = function(){
 }
 
 const exibirMensagemTransferencia = function(dados){
+
+    console.log("Cheguei no exibir mensagem");
     let divConteudo = document.querySelector('#conteudo');
-    divConteudo.innerHTML = '<p>Transferencia Realizada com Sucesso</p>';
+    divConteudo.text = '<p>Transferencia Realizada com Sucesso</p>';
+    
 }
