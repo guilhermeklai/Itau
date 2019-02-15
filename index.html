@@ -9,13 +9,13 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class=".grid">
+    <div class="grid">
         <header></header>
         <main>
             <div class="box" >
                 <div class="operation-1">
                     <p>Operação desejada: </p>
-                    <select class="w3-select" name="option">
+                    <select id="operacao" class="w3-select" name="option">
                         <option value="" disabled selected> Escolha a operação desejada </option>
                         <option value="1"> Bloqueio </option>
                         <option value="2"> Desbloqueio </option>
@@ -24,25 +24,22 @@
                 </div>
                 <div class="operation">
                     <p>Nº de ordem: </p>
-                    <input type="text" placeholder="Nº de ordem(apenas números)">
+                    <input id="ordemNumero" type="text" placeholder="Nº de ordem(apenas números)">
                 </div>
                 <div class="operation">
                     <p>CPF: </p>
-                    <input class="cpf" type="text" placeholder="CPF(apenas números)">
+                    <input id="cpf" class="cpf" type="text" placeholder="CPF(apenas números)">
                 </div>
                 <div class="operation">
                     <p>Valor (R$): </p>
-                    <input class="valor" type="text" placeholder="Valor">
+                    <input id="valor" class="valor" type="text" placeholder="Valor">
                     <button> Enviar </button>
                 </div>
             </div>
             <div id="conteudo">
-
+                
             </div>
         </main>
-            <div id="conteudo">
-
-            </div>
         <footer>
             <div>
                 <a href="">Sobre</a>
