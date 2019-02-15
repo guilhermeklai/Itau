@@ -27,18 +27,21 @@ main{
 
 
 
-main div{
+main > div{
     margin: 0px 50px 0px 50px;
     display: block;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
-main div div{
+main .box > div{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
+
 
 .operation{
     color: rgb(5, 75, 5);
@@ -75,6 +78,7 @@ main div div{
     margin-right: 700px;
     margin-bottom: 50px;
     margin-top: 25px;
+    width: 100%;
 }
 
 .operation-1 select{
